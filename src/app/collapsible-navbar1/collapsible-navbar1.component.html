@@ -1,0 +1,25 @@
+<nav class="navbar">
+    <div class="logo">
+        <a href="#home">
+            <h1>REDSKY</h1>
+        </a>
+        <button class="btn btn-primary navbar-toggler" (click)="collapsed=!collapsed"><i
+                class="fas fa-bars fa-2x"></i></button>
+    </div>
+
+    <ul class="nav" [ngClass]="{collapsible: collapsed}">
+        <li><a href="#link1">Link 1</a></li>
+        <li><a href="#link2">Link 2</a></li>
+        <li><a href="#link3">Link 3</a></li>
+        <li><a href="#link4">Link 4</a></li>
+        <li><a href="#link5">Link 5</a></li>
+    </ul>
+    <ul class="nav nav-right">
+        <li><a href="#stories">Stories</a></li>
+        <li><a href="#donate">Donate</a></li>
+        <li class="social"><a href="#facebook"><i class="fab fa-facebook"></i></a></li>
+        <li class="social"><a href="#twitter"><i class="fab fa-twitter"></i></a></li>
+        <li class="social"><a href=""><i class="fab fa-vimeo-v"></i></a></li>
+        <li class="social"><a href=""><i class="fab fa-linkedin"></i></a></li>
+    </ul>
+</nav>

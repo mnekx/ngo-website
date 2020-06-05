@@ -1,0 +1,84 @@
+/* Main Styling */
+:root {
+    --primary-color: #DB4B56;
+    --primary-font-family: 'Archivo Black', sans-serif;
+    --secondary-font-family: 'Montserrat', sans-serif;
+
+    /* Backgrounds */
+    --bg-light: #f4f4f4;
+    --bg-dark: #333;
+}
+
+a {
+    text-decoration: none;
+    color: blueviolet
+}
+
+ul.nav {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+ul.nav a, .logo>a {
+    display: inline-block;
+    /* color: darkturquoise; */
+    color: var(--primary-color);
+}
+
+.logo h1 {
+    margin: 20px 0;
+}
+
+ul.nav a {
+    padding: 10px 0;
+    border-top: #f3f3f3 1px solid;
+    width: 100%;
+}
+
+ul.nav a:hover {
+    color: white;
+    /* background: darkblue; */
+    background: var(--primary-color);
+}
+
+ul.nav li {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background: #333; */
+    background: var(--bg-light);
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding:0 5px 5px;
+}
+
+.btn {
+    border: 1px solid white;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.nav.collapsible {
+    display: block;
+}
+
+.nav.nav-right {
+   display: none;
+}
+
