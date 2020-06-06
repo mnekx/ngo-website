@@ -113,11 +113,60 @@ section#our-approach ul#approach-descriptions li a {
     margin: 10% 0;
 }
 
+section#our-approach ul#approach-descriptions li a#appr1 {
+    color: white;
+    background-color: transparent;
+    border: red 2px solid;
+}
+section#our-approach ul#approach-descriptions li a#appr2 {
+    color: white;
+    background-color: transparent;
+    border: black 2px solid;
+}
+section#our-approach ul#approach-descriptions li a#appr3 {
+    color: white;
+    background-color: transparent;
+    border: purple 2px solid;
+}
+section#our-approach ul#approach-descriptions li a#appr4 {
+    color: white;
+    background-color: transparent;
+    border: darkkhaki 2px solid;
+}
+section#our-approach ul#approach-descriptions li a#appr5 {
+    color: white;
+    background-color: transparent;
+    border: darkblue 2px solid;
+}
+section#our-approach ul#approach-descriptions li a#appr6 {
+    color: white;
+    background-color: transparent;
+    border: darkmagenta 2px solid;
+}
+
 section#our-approach ul#approach-descriptions li a:hover {
     /* color: var(--dark-color);
     background: var(--bg-light); */
     color: black;
     background: white;
+}
+section#our-approach ul#approach-descriptions li a#appr1:hover {
+    background: red;
+}
+section#our-approach ul#approach-descriptions li a#appr2:hover {
+    background: black;
+}
+section#our-approach ul#approach-descriptions li a#appr3:hover {
+    background: purple;
+}
+section#our-approach ul#approach-descriptions li a#appr4:hover {
+    background: darkkhaki;
+}
+section#our-approach ul#approach-descriptions li a#appr5:hover {
+    background: darkblue;
+}
+section#our-approach ul#approach-descriptions li a#appr6:hover {
+    background: darkmagenta;
 }
 
 section#our-approach ul#approach-descriptions li a span {
