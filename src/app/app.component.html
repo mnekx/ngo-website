@@ -52,14 +52,222 @@
                 <i class="fas fa-users fa-x3"></i>
             </a>
         </li>
-        <div id="approach-focus-descr" #approachFocusDescr>
-            <h3>13 Projects</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor laboriosam, animi autem blanditiis
-                nostrum
-                dolores accusantium iusto iste molestiae aut quod quos qui possimus, vero, veniam id neque omnis
-                explicabo
-                dolore libero vitae eaque soluta. Perspiciatis quis sequi consectetur asperiores!</p>
-            <a href="#more-info" class="btn btn-outline">MORE INFO</a>
+        <div id="approach-focus-descr" [ngSwitch]='approach' #approachFocusDescr>
+            <div *ngSwitchDefault='health'>
+                <h3>13 Projects</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor laboriosam, animi autem blanditiis
+                    nostrum
+                    dolores accusantium iusto iste molestiae aut quod quos qui possimus, vero, veniam id neque omnis
+                    explicabo</p>
+                <a href="#more-info" class="btn btn-outline">MORE INFO</a>
+            </div>
+            <div *ngSwitchCase="'markets'">
+                <h3>126,076</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor laboriosam, animi autem blanditiis
+                    nostrum
+                    dolore libero vitae eaque soluta. Perspiciatis quis sequi consectetur asperiores!</p>
+                <a href="#more-info" class="btn btn-outline">MORE INFO</a>
+            </div>
+            <div *ngSwitchCase="'livelihood'">
+                <h3>1,756,641</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor laboriosam, animi autem blanditiis
+                    nostrum
+                    dolores accusantium iusto iste molestiae aut quod quos qui possimus, vero, veniam id neque omnis
+                    dolore libero vitae eaque soluta. Perspiciatis quis sequi consectetur asperiores!</p>
+                <a href="#more-info" class="btn btn-outline">MORE INFO</a>
+            </div>
+            <div *ngSwitchCase="'environment'">
+                <h3>1,311,861</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor laboriosam, animi autem blanditiis
+                    nostrum
+                    dolores accusantium iusto iste molestiae aut quod quos qui possimu explicabo
+                    dolore libero vitae eaque soluta. Perspiciatis quis sequi consectetur asperiores!</p>
+                <a href="#more-info" class="btn btn-outline">MORE INFO</a>
+            </div>
+            <div *ngSwitchCase="'capacity'">
+                <h3>250,097</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor laboriosam, animi autem blanditiis
+                    nostrum
+                    dolores accusantium iusto iste molestiae aut quod quos qui possimus, vero, veniam id neque omnis
+                    explicabo</p>
+                <a href="#more-info" class="btn btn-outline">MORE INFO</a>
+            </div>
+            <div *ngSwitchCase="'governance'">
+                <h3>794</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor laboriosam, animi autem blanditiis
+                    dolores accusantium iusto iste molestiae aut quod quos qui possimus, vero, veniam id neque omnis
+                    explicabo
+                    dolore libero vitae eaque soluta. Perspiciatis quis sequi consectetur asperiores!</p>
+                <a href="#more-info" class="btn btn-outline">MORE INFO</a>
+            </div>
         </div>
     </ul>
 </section>
+
+<section id="news-highlights">
+    <h1>LATEST NEWS & HIGHLIGHTS</h1>
+    <div class="row">
+        <div class="column">
+            <img src="../assets/images/news2.jpeg" alt="Quarantine">
+            <!-- <img src="https://source.unsplash.com/random" alt="Not Available"> -->
+            <h5>June 4, 2020</h5>
+            <h2>Building better post-Covid-19 world with the private sector</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis at autem accusamus! Nulla sint harum
+                tenetur. Placeat minima perspiciatis explicabo recusandae cupiditate, voluptatum facilis expedita enim
+                hic nesciunt ab commodi. <a href="#more">more...</a></p>
+        </div>
+        <div class="column">
+            <img src="../assets/images/news1.jpeg" alt="Quarantine">
+            <!-- <img src="https://source.unsplash.com/random" alt="Not Available"> -->
+            <h5>June 4, 2020</h5>
+            <h2>Building better post-Covid-19 world with the private sector</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis at autem accusamus! Nulla sint harum
+                tenetur. Placeat minima perspiciatis explicabo recusandae cupiditate, voluptatum facilis expedita enim
+                hic nesciunt ab commodi. <a href="#more">more...</a></p>
+        </div>
+        <div class="column">
+            <img src="../assets/images/news.jpeg" alt="Quarantine">
+            <!-- <img src="https://source.unsplash.com/random" alt="Not Available"> -->
+            <h5>June 4, 2020</h5>
+            <h2>Building better post-Covid-19 world with the private sector</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis at autem accusamus! Nulla sint harum
+                tenetur. Placeat minima perspiciatis explicabo recusandae cupiditate, voluptatum facilis expedita enim
+                hic nesciunt ab commodi. <a href="#more">more...</a></p>
+        </div>
+    </div>
+</section>
+
+<section id="signup">
+    <h2><span>Sign up</span> to recieve news and updates from <span>REDSKY</span></h2>
+    <p>
+        Inside Our Promise, Pact's e-newsletter, offers the latest on our integrated, adaptive approach to development
+        and our effort to end poverty and marginalization around the world.
+    </p>
+    <form>
+        <input type="text" placeholder="Your Email Address ...">
+        <button class="btn btn-primary">Sign Up</button>
+    </form>
+</section>
+
+<section id="promises-kept">
+    <h1>PROMISES KEPT</h1>
+    <div class="row">
+        <div id="promise1" class="column">
+            <div class="img-container">
+                <h3>72%</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ex recusandae culpa vel expedita
+                distinctio laborum eum accusamus deserunt sapiente consectetur dignissimos temporibus, iste quas hic
+                ullam
+                sed eius praesentium?</p>
+        </div>
+        <div id="promise2" class="column">
+            <div class="img-container">
+                <h3>75,000+</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ex recusandae culpa vel expedita
+                distinctio laborum eum accusamus deserunt sapiente consectetur dignissimos temporibus, iste quas hic
+                ullam
+                sed eius praesentium?</p>
+        </div>
+        <div id="promise3" class="column">
+            <div class="img-container">
+                <h3>630</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ex recusandae culpa vel expedita
+                distinctio laborum eum accusamus deserunt sapiente consectetur dignissimos temporibus, iste quas hic
+                ullam
+                sed eius praesentium?</p>
+        </div>
+    </div>
+</section>
+
+<section id="promises-shared">
+    <h1>PROMISES SHARED</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, repellat!</p>
+    <div class="row">
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa expedita cumque, quaerat quibusdam
+                molestias voluptates ipsam ratione velit deleniti necessitatibus quam error architecto facilis
+                consectetur quidem dicta, repellendus vero. Ullam?</p>
+            <h5>Lorem ipsum dolor sit amet. <strong>#redsky_promise</strong></h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa expedita cumque, quaerat quibusdam
+                molestias voluptates ipsam ratione velit deleniti necessitatibus quam error architecto facilis
+                consectetur quidem dicta, repellendus vero. Ullam?</p>
+            <h5>Columbia</h5>
+        </div>
+        <div class="column"></div>
+        <div class="column"></div>
+    </div>
+    <div class="row">
+        <div class="column"></div>
+        <div class="column">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa expedita cumque, quaerat quibusdam
+                molestias voluptates ipsam ratione velit deleniti necessitatibus quam error architecto facilis
+                consectetur quidem dicta, repellendus vero. Ullam?</p>
+            <h5>Myanmar</h5>
+        </div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+    </div>
+</section>
+
+<footer>
+    <div id="signup">
+        <h1>SIGNUP</h1>
+        <h2><span>SIGNUP</span> TO RECIEVE NEWS AND UPDATES FROM <span class="company-name">REDSKY</span></h2>
+        <p>Inside Our Promise, Pact's e-newsletter, offers the latest on our integrated, adaptive approach to
+            development and our effort to end poverty and marginalization around the world.</p>
+        <form>
+            <input placeholder="Your Email Address..." type="text">
+            <input type="submit" value="Submit" class="btn signup">
+        </form>
+    </div>
+    <div id="menu">
+        <h2>MENU</h2>
+        <div id="menu-items">
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+                <li>item 6</li>
+            </ul>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+            </ul>
+        </div>
+    </div>
+    <div id="contact">
+        <h2>CONTACT</h2>
+        <p>REDSKY</p>
+        <p>Mwananyamala, Victoria Bagamoyo Road</p>
+        <p>PO BOX 45903 Kinondoni</p>
+        <p>info@redsky.org</p>
+    </div>
+    <div id="finduson">
+        <h2>FIND US ON</h2>
+        <ul>
+            <li class="social"><a href="#facebook"><i class="fab fa-facebook fa-x10"></i></a></li>
+            <li class="social"><a href="#twitter"><i class="fab fa-twitter  fa-x10"></i></a></li>
+            <li class="social"><a href=""><i class="fab fa-vimeo-v  fa-x10"></i></a></li>
+            <li class="social"><a href=""><i class="fab fa-linkedin fa-x10"></i></a></li>
+        </ul>
+    </div>
+</footer>
