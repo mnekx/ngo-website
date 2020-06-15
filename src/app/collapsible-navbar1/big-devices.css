@@ -42,16 +42,16 @@
         position: relative;
     }
 
-    ul.nav li:hover::after {
+    ul.nav.nav-left a:hover::after {
         content: '';
         display: block;
         position: absolute;
         top: 100%;
         left: 0;
-        width: 100%;
+        width: 400px;
         height: 400px;
         background: var(--primary-color);
-        z-index: 15px;
+        z-index: 15;
     }
 
 

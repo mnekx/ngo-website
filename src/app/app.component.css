@@ -305,6 +305,8 @@ section#promises-shared {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 section#promises-shared div.row {
