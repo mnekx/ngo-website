@@ -1,0 +1,36 @@
+@media screen and (min-width: 500px) {
+    
+    .dropdown .dropdown-menu {
+        /* background: #666; */
+        width: 100%;
+        /* transition: display 3s ease-out; */
+    }
+
+    /* Utilies */
+    .btn {
+        width: auto;
+    }
+
+    /*  */
+    
+    .dropdown .dropdown-item {
+        border: 1px dotted #111;
+    }
+    
+    a {
+        display: block;
+        text-decoration: none;
+        color: #f4f4f4;
+        padding: 10px 20px;
+    
+    }
+    
+    a:hover {
+        background:black;
+        color: white;
+    }
+    
+    ul.disp {
+        display: none;
+    }
+}

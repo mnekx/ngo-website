@@ -1,0 +1,10 @@
+<div class="dropdown">
+    <button class="btn dropdown-toggle" (click)="toggleStatus()">Toggle Dropdown
+        &nbsp;&nbsp;<i class="fas fa-caret-down"></i></button>
+    <ul class="dropdown-menu" [ngClass]="{disp: !opened}">
+        <li class="dropdown-item"><a href="#">link 1</a></li>
+        <li class="dropdown-item"><a href="#">link 2</a></li>
+        <li class="dropdown-item"><a href="#">link 3</a></li>
+        <li class="dropdown-item"><a href="#">link 4</a></li>
+    </ul>
+</div>

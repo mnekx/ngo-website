@@ -1,0 +1,42 @@
+
+:host {
+    display: inline-block;
+}
+
+.dropdown .dropdown-menu {
+    position: absolute;
+    background: #666;
+    width: 100%;
+    transition: display 3s ease-out;
+    z-index: 21;
+    bottom: 0;
+}
+
+/* Utilies */
+.btn {
+    width: 100%;
+}
+
+/*  */
+.dropdown .dropdown-item {
+    border: 1px dotted #111;
+    /* position: absolute; */
+    /* z-index: 20; */
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #f4f4f4;
+    padding: 10px 20px;
+
+}
+
+a:hover {
+    background:black;
+    color: white;
+}
+
+ul.disp {
+    display: none;
+}
