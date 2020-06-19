@@ -8,6 +8,7 @@ import { HeaderImgSlideComponent } from './header-img-slide/header-img-slide.com
 import { DescribeDirective } from './directives/describe.directive';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CarouselComponent } from './carousel/carousel.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,463 @@
+@media screen and (min-width: 1200px) {
+    /* Elements styling */
+    /* header {
+        position: relative;
+        background: url('./images/6th.JPG') no-repeat center center/cover;
+        height: 75vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        color: var(--light-color) !important;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    } */
+
+    p, h2, ul {
+        font-family: var(--secondary-font-family);
+    }
+
+    /* header::before {
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(3, 3, 3, 0.6);
+        z-index: 5;
+    } */
+
+    div.description-wrap {
+        width: 60%;
+        z-index: 10;
+    }
+
+    h1.descr-header {
+        background: rgba(219, 75, 86, 0.4);
+    }
+
+    #org-short-desc {
+        text-align: center;
+        font-size: 20px;
+        font-family: var(--secondary-font-family);
+    }
+
+    section#our-approach {
+        background: url('./images/approach.jpg') no-repeat center center/cover;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        color: var(--light-color);
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+
+    section#our-approach::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgb(1, 1, 1, 0.4);
+        z-index: 5;
+
+    }
+
+    section#our-approach div#focus {
+        z-index: 10;
+        display: flex;
+        padding: 10px 30px;
+        background: rgba(3, 3, 3, 0.6);
+        height: 35%;
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    section#our-approach div#focus h2 {
+        margin-right: 40px;
+        padding-right: 40px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-right: white 2px solid;
+        font-size: 33px;
+    }
+
+    section#our-approach div#focus p {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    section#our-approach ul#approach-descriptions {
+        list-style: none;
+        display: flex;
+        z-index: 10;
+        justify-content: space-between;
+    }
+
+    section#our-approach ul#approach-descriptions li {
+        width: 10%;
+        margin-left: 40px;
+    }
+
+    section#our-approach ul#approach-descriptions li a {
+        color: yellow;
+        display: flex;
+        flex-direction: column;
+        padding: 70px;
+        border-radius: 50%;
+        border: white 2px solid;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        max-width: 30%;
+        max-height: 30%;
+        margin: 10% 0;
+    }
+
+    section#our-approach ul#approach-descriptions li a#appr1 {
+        color: white;
+        background-color: transparent;
+        border: red 2px solid;
+    }
+    section#our-approach ul#approach-descriptions li a#appr2 {
+        color: white;
+        background-color: transparent;
+        border: darksalmon 2px solid;
+    }
+    section#our-approach ul#approach-descriptions li a#appr3 {
+        color: white;
+        background-color: transparent;
+        border: purple 2px solid;
+    }
+    section#our-approach ul#approach-descriptions li a#appr4 {
+        color: white;
+        background-color: transparent;
+        border: darkkhaki 2px solid;
+    }
+    section#our-approach ul#approach-descriptions li a#appr5 {
+        color: white;
+        background-color: transparent;
+        border: darkblue 2px solid;
+    }
+    section#our-approach ul#approach-descriptions li a#appr6 {
+        color: white;
+        background-color: transparent;
+        border: darkorange 2px solid;
+    }
+
+    section#our-approach ul#approach-descriptions li a:hover {
+        /* color: var(--dark-color);
+        background: var(--bg-light); */
+        color: black;
+        background: white;
+    }
+    section#our-approach ul#approach-descriptions li a#appr1:hover {
+        background: red;
+    }
+    section#our-approach ul#approach-descriptions li a#appr2:hover {
+        background: darksalmon;
+    }
+    section#our-approach ul#approach-descriptions li a#appr3:hover {
+        background: purple;
+    }
+    section#our-approach ul#approach-descriptions li a#appr4:hover {
+        background: darkkhaki;
+    }
+    section#our-approach ul#approach-descriptions li a#appr5:hover {
+        background: darkblue;
+    }
+    section#our-approach ul#approach-descriptions li a#appr6:hover {
+        background: darkorange;
+    }
+
+    section#our-approach ul#approach-descriptions li a span {
+        margin-bottom: 20px;
+    }
+
+    section#our-approach div#approach-focus-descr {
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 30px;
+        font-family: var(--secondary-font-family);
+    }
+
+    section#our-approach div#approach-focus-descr h3 {
+        font-size: 60px;
+        font-weight: bolder;
+        color: blue;
+    }
+
+
+    /* Latest news and Highlihgts */
+    section#news-highlights {
+        background: #FCF4D1;
+        margin: 0;
+    }
+
+    section#news-highlights .column {
+        margin: 0 10px;
+    }
+
+    section#news-highlights>div {
+        /* display: flex; */
+        flex-direction: row;
+    }
+
+    section#news-highlights img {
+        display: inline-block;
+        width: 100%;
+        max-height: 250px;
+        margin-bottom: 10px;
+        margin: 0;
+    }
+
+    /* Sign up */
+    section#signup {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: #0592C8;
+    }
+
+    section#signup input {
+        padding: 10px 5px;
+        width: 60vw;
+    }
+
+    section#signup h1 {
+        text-align: center;
+    }
+
+    section#signup form {
+        position: relative;
+    }
+
+    section#signup .btn {
+        padding: 5px 5px;
+        position: absolute;
+        right: 4px;
+        top: 5px;
+    }
+
+    /* Promises-kept */
+    section#promises-kept {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section#promises-kept div {
+        text-align: center;
+        padding: 3px 5px;
+    }
+
+    section#promises-kept>div {
+        /* display: flex; */
+        flex-direction: row;
+    }
+
+    section#promises-kept div.img-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 250px;
+        margin-bottom: 10px;
+        justify-content: center;
+        align-items: center;
+        font-size: 100px;
+        color: var(--light-color);
+        position: relative;
+    }
+
+    section#promises-kept div.img-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(3, 3, 3, 0.4);
+        z-index: 5;
+    }
+
+    div#promise1 div.img-container {
+        background: url('./images/artisanal.jpg') no-repeat center center/cover;   
+    }
+
+    div#promise2 div.img-container {
+        background: url('./images/diamond.jpeg') no-repeat center center/cover;
+    }
+
+    div#promise3 div.img-container {
+        background: url('./images/mangroves.jpg') no-repeat center center/cover;
+    }
+
+    section#promises-kept div.img-container h3 {
+        z-index: 10;
+    }
+
+    /* Promises shared */
+    section#promises-shared {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    section#promises-shared div.row {
+        flex-wrap: nowrap;
+    }
+
+    section#promises-shared div.row div.column {
+        height: 250px;
+        width: 20vw;
+        background: black;
+        border: blanchedalmond 1px solid;
+        padding: 0 10px;
+    }
+    section#promises-shared div.row:first-of-type div.column:nth-child(1) {
+        background: url('./images/moro1.jpeg') no-repeat center center/cover;
+    }
+
+    section#promises-shared div.row:first-of-type div.column:nth-child(2) {
+        background: url('./images/moro2.jpeg') no-repeat center center/cover;
+    }
+
+    section#promises-shared div.row:first-of-type div.column:nth-child(3) {
+        background: url('./images/moro3.jpeg') no-repeat center center/cover;
+    }
+
+    section#promises-shared div.row:first-of-type div.column:nth-child(4) {
+        background: url('./images/moro5.jpeg') no-repeat center center/cover;
+    }
+    section#promises-shared div.row:first-of-type div.column:nth-child(5) {
+        background: var(--primary-color);
+        color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    section#promises-shared div.row:nth-of-type(2) div.column:nth-child(1) {
+        background: url('./images/moro7.jpeg') no-repeat center center/cover;
+    }
+
+    section#promises-shared div.row:nth-of-type(2) div.column:nth-child(2) {
+        background: url('./images/moro8.jpeg') no-repeat center center/cover;
+    }
+
+    section#promises-shared div.row:nth-of-type(2) div.column:nth-child(3) {
+        background: var(--light-color);
+        color: black;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    section#promises-shared div.row:nth-of-type(2) div.column:nth-child(4) {
+        background: url('./images/moro10.jpeg') no-repeat center center/cover;
+    }
+
+    section#promises-shared div.row:nth-of-type(2) div.column:nth-child(5) {
+        background: url('./images/moro11.jpeg') no-repeat center center/cover;
+    }
+
+    section#promises-shared div.row:last-of-type div.column:nth-child(1) {
+        background: url('./images/moro12.jpeg') no-repeat center center/cover;
+    }
+
+    section#promises-shared div.row:last-of-type div.column:nth-child(2) {
+        background: var(--dark-color);
+        color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    section#promises-shared div.row:last-of-type div.column:nth-child(3) {
+        background: url('./images/moro13.jpeg') no-repeat center center/cover;
+    }
+
+    section#promises-shared div.row:last-of-type div.column:nth-child(4) {
+        background: url('./images/moro14.jpeg') no-repeat center center/cover;
+    }
+
+    section#promises-shared div.row:last-of-type div.column:nth-child(5) {
+        background: url('./images/moro15.jpeg') no-repeat center center/cover;
+    }
+
+    /* Footer */
+    footer div {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 60px 20px 10px;
+    }
+
+    footer div#signup {
+        background: #000;
+        align-items: start;
+    }
+
+    footer div#signup form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer div#signup span {
+        color: blue;
+    }
+
+    footer div#signup span.company-name {
+        color: var(--primary-color);
+    }
+
+    footer div#menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer div#menu div#menu-items {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    footer div#menu ul:first-of-type {
+        margin: 0 30px;
+    }
+
+    footer div#contact {
+        position: relative;
+    }
+
+    footer div#contact::before {
+        content: '';
+        height: 80%;
+        background: gray;
+        width: 1px;
+        position: absolute;
+        top: 13.5%;
+        left: 0;
+        /* display: block; */
+    }
+}

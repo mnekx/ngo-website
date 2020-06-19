@@ -26,6 +26,10 @@ body {
     color: white;
 }
 
+nav {
+    padding: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -95,6 +99,7 @@ footer {
     justify-content: center;
     align-items: center;
     /* text-align: center; */
+    flex-wrap: nowrap;
 }
 
 .signup {
@@ -103,3 +108,31 @@ footer {
     background: blue;
 }
 
+/* Carousel */
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-caption {
+    right: 37.5%;
+    left: 37.5%;
+}
+
+.carousel-inner>.carousel-item:first-of-type>.carousel-caption {
+    top: 25%;
+    left: 10%;
+    bottom: 75%;
+    right: 60%;
+}
+.carousel-inner>.carousel-item:last-of-type>.carousel-caption {
+    top: 25%;
+    right: 10%;
+    bottom: 75%;
+    left: 60%;
+}
+
+.carousel-caption h3 {
+    background: rgba(168, 24, 35, 0.7);
+}

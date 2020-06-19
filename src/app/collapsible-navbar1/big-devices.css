@@ -8,7 +8,7 @@
     --bg-dark: #333;
 } */
 
-@media screen and (min-width: 912px) {
+@media screen and (min-width: 1200px) {
     button.navbar-toggler {
         display: none;
     }
@@ -17,6 +17,11 @@
         display: flex;
         flex-direction: row;
         border-bottom: var(--primary-color) 1px solid;
+        padding: 0;
+    }
+
+    nav.navbar div, nav.navbar ul  {
+        padding-bottom: 0;
     }
 
     .logo {
@@ -27,6 +32,7 @@
 
     ul.nav {
         display: flex;
+        flex-wrap: nowrap;
     }
 
     ul.nav a {
@@ -82,6 +88,10 @@
      .nav.nav-right li.social a {
          padding-top: 11.5%;
          /* margin-top: 11.5%; */
+     }
+
+     nav {
+         flex-wrap: nowrap;
      }
 
 }
