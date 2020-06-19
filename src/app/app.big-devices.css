@@ -43,7 +43,9 @@
         font-family: var(--secondary-font-family);
     }
 
-    section#our-approach {
+    /* Our Aproach */
+
+    /* section#our-approach {
         background: url('./images/approach.jpg') no-repeat center center/cover;
         height: auto;
         margin: 0;
@@ -52,7 +54,7 @@
         display: flex;
         position: relative;
         flex-direction: column;
-    }
+    } */
 
     section#our-approach::before {
         content: '';
@@ -93,15 +95,18 @@
     }
 
     section#our-approach ul#approach-descriptions {
-        list-style: none;
+        /* list-style: none;
         display: flex;
         z-index: 10;
-        justify-content: space-between;
+        justify-content: space-between; */
+        flex-direction: row;
     }
 
-    section#our-approach ul#approach-descriptions li {
+    section#our-approach ul#approach-descriptions li.column {
         width: 10%;
         margin-left: 40px;
+        flex-direction: column;
+        /* display: block; */
     }
 
     section#our-approach ul#approach-descriptions li a {
@@ -403,6 +408,11 @@
     }
 
     /* Footer */
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
+
     footer div {
         width: 25%;
         display: flex;
@@ -448,6 +458,10 @@
 
     footer div#contact {
         position: relative;
+    }
+
+    footer div#contact h2 {
+        position: static;
     }
 
     footer div#contact::before {
